@@ -1,0 +1,236 @@
+/* Archivo: public/css/tarjetas.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #2d3748;
+    padding: 25px;
+}
+
+.contenedor {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* Encabezado principal */
+.header-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a202c;
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header-app h1 {
+    font-size: 1.5rem;
+}
+
+.header-app p {
+    font-size: 0.9rem;
+    color: #cbd5e0;
+    margin-top: 4px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 9px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.88;
+}
+
+.btn-primario { background-color: #3182ce; color: #fff; }
+.btn-secundario { background-color: #718096; color: #fff; }
+.btn-exito { background-color: #38a169; color: #fff; }
+.btn-peligro { background-color: #e53e3e; color: #fff; }
+.btn-sm { padding: 5px 10px; font-size: 0.8rem; }
+
+/* Tarjeta de cada Sprint */
+.sprint-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 22px;
+    margin-bottom: 28px;
+    border-top: 5px solid #3182ce;
+}
+
+.sprint-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sprint-header h2 {
+    font-size: 1.3rem;
+    color: #1a202c;
+}
+
+.sprint-fechas {
+    font-size: 0.88rem;
+    color: #718096;
+    margin-top: 3px;
+}
+
+/* Cuadrícula de ítems dentro del Sprint */
+.grid-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.item-card {
+    border-radius: 8px;
+    padding: 15px;
+    border-left: 5px solid #cbd5e0;
+    background-color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Colores según categoría del SQL del profe */
+.cat-logro { border-left-color: #38a169; background-color: #f0fff4; }
+.cat-impedimento { border-left-color: #e53e3e; background-color: #fff5f5; }
+.cat-accion { border-left-color: #3182ce; background-color: #ebf8ff; }
+.cat-comentario { border-left-color: #805ad5; background-color: #faf5ff; }
+.cat-otro { border-left-color: #718096; background-color: #edf2f7; }
+
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.badge-logro { background: #c6f6d5; color: #22543d; }
+.badge-impedimento { background: #fed7d7; color: #742a2a; }
+.badge-accion { background: #bee3f8; color: #2a4365; }
+.badge-comentario { background: #e9d8fd; color: #44337a; }
+.badge-otro { background: #e2e8f0; color: #2d3748; }
+
+.item-desc {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.item-meta {
+    font-size: 0.8rem;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.estado-cumplida { color: #22543d; font-weight: bold; }
+.estado-pendiente { color: #c53030; font-weight: bold; }
+
+.item-acciones {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 8px;
+}
+
+/* Formularios */
+.form-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+.form-grupo {
+    margin-bottom: 15px;
+}
+
+.form-grupo label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 0.92rem;
+}
+
+.fila-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+}
+
+/* Caja destacada para acciones del sprint anterior */
+.caja-revision {
+    background-color: #fffbeb;
+    border: 1px solid #f6e05e;
+    border-left: 5px solid #d69e2e;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 22px;
+}
+
+.caja-revision h3 {
+    color: #744210;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.accion-previa-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #edf2f7;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-rapido {
+    background: #f7fafc;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px dashed #cbd5e0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}

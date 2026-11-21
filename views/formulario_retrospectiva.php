@@ -33,7 +33,7 @@ $accionesAnteriores = $datosPrevios['acciones'];
             <?php if ($sprintAnterior !== null && !empty($accionesAnteriores)): ?>
                 <div class="caja-revision">
                     <h3>Seguimiento: Acciones acordadas en <?= htmlspecialchars($sprintAnterior->getNombre()) ?></h3>
-                    <p style="font-size: 0.88rem; margin-bottom: 12px; color: #744210;">
+                    <p>
                         Antes de iniciar la nueva retrospectiva, evalúa si el equipo cumplió los compromisos anteriores:
                     </p>
 

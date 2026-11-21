@@ -385,10 +385,9 @@ body {
     padding: 9px 12px;
     background-image:
         url('../../resources/block.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment:fixed;
-    background-repeat: no-repeat;
+        background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     color: var(--pink-neon);
     border: 1px solid var(--pink-border);
     font-family: 'GameO', monospace;
@@ -408,18 +407,32 @@ body {
 }
 
 .caja-revision {
-    background: rgba(36, 22, 12, 0.85);
-    border: 1px solid var(--gold-tech);
-    border-left: 4px solid var(--gold-tech);
+    background-color: #975b79 !important;
+    background-image: 
+        linear-gradient(rgba(127, 43, 109, 0.35), rgba(18, 8, 13, 0.45)),
+        url('../../resources/red.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 0 !important;
+    border: 4px solid var(--pink-border);
+    border-left: 8px solid var(--cyan-tech);
     padding: 18px;
     margin-bottom: 22px;
 }
 
 .caja-revision h3 {
-    font-family: 'Cherry', monospace;
+    font-family: 'Pixel', monospace;
     color: var(--gold-tech);
     margin-bottom: 10px;
     font-size: 0.95rem;
+}
+
+.caja-revision p{
+    font-family: 'GameO', monospace;
+    font-size: 0.88rem;
+    margin-bottom: 12px;
+    color: #f5f5fb;
 }
 
 .accion-previa-item {
@@ -427,9 +440,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background: var(--card-dark);
+    background-image: 
+        linear-gradient(rgba(43, 84, 127, 0.35), rgba(18, 8, 13, 0.45)),
+        url('../../resources/ventanas.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 0 !important;
     margin-bottom: 8px;
-    border: 1px solid rgba(255, 209, 102, 0.3);
+    border: 1px solid rgba(204, 158, 194, 0.3);
     flex-wrap: wrap;
     gap: 10px;
 }

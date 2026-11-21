@@ -10,9 +10,9 @@ class RetrospectivasDb implements RetrospectivasDbInterface {
     private string $host = 'localhost';
     private string $user = 'root';
     private string $password = ''; // En XAMPP la contraseña de root viene vacía por defecto
-    private string $database = 'registro_retro_db'; // Nombre exacto de la BD del profe
+    private string $database = 'registro_retro_db'; // Nombre exacto de la BD
     
-    // Aquí guardaremos el objeto de conexión de mysqli
+    // guardamos el objeto de conexión de mysqli
     private ?mysqli $connection = null;
 
     // El constructor se ejecuta apenas hacemos "new RetrospectivasDb()"
@@ -25,12 +25,12 @@ class RetrospectivasDb implements RetrospectivasDbInterface {
             $this->database
         );
 
-        // Si MySQL está apagado en XAMPP o el nombre de la BD está mal, detenemos todo y avisamos
+        // Si MySQL está apagado en XAMPP o el nombre de la BD está mal, se detiene todo y avisamos
         if ($this->connection->connect_error) {
             die("Error de conexión a MySQL: " . $this->connection->connect_error);
         }
 
-        // Configuramos utf8mb4 para que las tildes y las 'ñ' se guarden y lean bien
+        // configurar utf8mb4 para que las tildes y las 'ñ' se guarden y lean bien
         $this->connection->set_charset("utf8mb4");
     }
 

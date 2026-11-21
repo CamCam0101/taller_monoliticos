@@ -117,7 +117,7 @@ $historial = $controller->obtenerHistorialCompleto();
                                             <a href="editar_item.php?id=<?= $item->getId() ?>" class="btn btn-primario btn-sm">Editar</a>
                                             <a href="actions/eliminar_item.php?id=<?= $item->getId() ?>"
                                                 class="btn btn-peligro btn-sm"
-                                                onclick="return confirm('¿Eliminar este registro?');">Borrar</a>
+                                                onclick="return confirm('¿Desea eliminar este registro?');">Borrar</a>
                                         </div>
                                     </div>
                                 </article>

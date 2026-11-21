@@ -139,10 +139,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-    color: var(--pink-neon);
-    background: rgba(255, 112, 166, 0.36);
+    color: var(--bg-void);
+    background: rgba(207, 111, 175, 0.56);
     border: 2px solid var(--pink-soft);
-    outline: 2px solid rgba(255, 112, 166, 0.35);
+    outline: 2px solid rgba(206, 52, 111, 0.35);
     outline-offset: 2px;
     box-shadow: 0 0 14px var(--pink-glow), inset 0 0 10px rgba(255, 112, 166, 0.25);
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
@@ -161,7 +161,7 @@ body {
 
 .btn-secundario {
     border-color: var(--text-muted);
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(73, 133, 167, 0.53);
     box-shadow: none;
     margin-top: 25px ;
 }
@@ -174,7 +174,7 @@ body {
 
 .btn-peligro {
     border-color: var(--blue-tech);
-    background: rgba(255, 77, 109, 0.18);
+    background: rgba(70, 141, 208, 0.48);
     box-shadow: 0 0 12px rgba(255, 77, 109, 0.35);
 }
 
@@ -233,10 +233,10 @@ body {
 }
 
 .sprint-header h2 {
-    font-family: 'Cherry', monospace;
+    font-family: 'GameO', monospace;
     font-size: 1.25rem;
-    color: var(--pink-soft);
-    text-shadow: 0 0 8px var(--pink-glow);
+    color: var(--purple-neon);
+    text-shadow: 0 0 8px var(--pink-soft);
 }
 
 .sprint-fechas {
@@ -254,9 +254,19 @@ body {
 
 .item-card {
     padding: 16px;
-    background: var(--card-dark);
-    border: 1px solid rgba(255, 112, 166, 0.25);
-    border-left: 4px solid var(--purple-neon);
+    background-color: #12080d !important;
+    background-image: 
+        linear-gradient(rgba(18, 8, 13, 0.45), rgba(18, 8, 13, 0.45)),
+        url('../../resources/noche.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-radius: 0 !important;
+    border: 4px solid var(--pink-neon);
+    border-left: 8px solid var(--purple-neon);
+    outline: 2px solid var(--bg-void, #12080d);
+    box-shadow: 6px 6px 0px rgba(18, 8, 13, 0.85);
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -310,7 +320,7 @@ body {
 }
 
 .badge-accion {
-    background: rgba(255, 112, 166, 0.15);
+    background: rgba(254, 189, 214, 0.589);
     color: var(--pink-soft);
 }
 
@@ -354,7 +364,7 @@ body {
     gap: 8px;
     flex-wrap: wrap;
     margin-top: 10px;
-    border-top: 1px dashed rgba(255, 112, 166, 0.25);
+    border-top: 1px dashed rgba(148, 26, 73, 0.55);
     padding-top: 10px;
 }
 
@@ -425,7 +435,7 @@ body {
 }
 
 .form-rapido {
-    background: rgba(18, 8, 13, 0.75);
+    background: rgba(149, 202, 220, 0.55);
     padding: 14px;
     border: 1px dashed var(--pink-border);
     display: flex;
@@ -433,3 +443,4 @@ body {
     flex-wrap: wrap;
     align-items: center;
 }
+
